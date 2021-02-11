@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+        }
+        #step1,#step2 {
+            padding:10px 20px;
+            margin:0 50px;
+        }
+        #step3 {
+            position: absolute;
+            top:300px;
+            left:300px;
+            padding:10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class='box'>
+        <div id='step1'>step1</div>
+        <div id='step2'>step2</div>
+        <div id='step3'>step3</div>
+    </div>
+<script>
+    const guide = guideJs().setOptions({
+        steps:[
+            {   
+                title:'标题1',
+                element:document.getElementById('step1'),
+                content:'步骤1内容'
+            },
+            {   
+                title:'标题2',
+                element:document.getElementById('step2'),
+                content:'步骤2内容'
+            },
+            {   
+                title:'标题3',
+                element:document.getElementById('step3'),
+                content:'步骤3内容'
+            }
+        ]
+    });
+    guide.start()
+</script>
+</body>
+</html>

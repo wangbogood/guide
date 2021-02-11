@@ -1,0 +1,23 @@
+node_modules
+_site
+
+.idea
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules/
+
+build/
+dist/
+
+.vscode
+!.vscode/tasks.js
+
+.idea/
+*.iml
+
+
